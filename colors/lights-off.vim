@@ -13,13 +13,13 @@ endif
 let colors_name = "lights-off"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=235 ctermfg=250 cterm=NONE guibg=#262626 guifg=#bcbcbc gui=NONE
+    hi Normal ctermbg=234 ctermfg=231 cterm=NONE guibg=#1c1c1c guifg=#c7c7c7 gui=NONE
     hi NonText ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi EndOfBuffer ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi LineNr ctermbg=234 ctermfg=242 cterm=NONE guibg=#1c1c1c guifg=#6c6c6c gui=NONE
     hi FoldColumn ctermbg=234 ctermfg=242 cterm=NONE guibg=#1c1c1c guifg=#6c6c6c gui=NONE
     hi Folded ctermbg=234 ctermfg=242 cterm=NONE guibg=#1c1c1c guifg=#6c6c6c gui=NONE
-    hi MatchParen ctermbg=234 ctermfg=231 cterm=NONE guibg=#1c1c1c guifg=#ffffff gui=NONE
+    hi MatchParen ctermbg=234 ctermfg=231 cterm=NONE guibg=#1c1c1c guifg=#c7c7c7 gui=NONE
     hi SignColumn ctermbg=234 ctermfg=242 cterm=NONE guibg=#1c1c1c guifg=#6c6c6c gui=NONE
     hi Comment ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=250 cterm=NONE guibg=NONE guifg=#bcbcbc gui=NONE
@@ -62,7 +62,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi VisualNOS ctermbg=NONE ctermfg=NONE cterm=underline guibg=NONE guifg=NONE gui=underline
     hi VertSplit ctermbg=238 ctermfg=238 cterm=NONE guibg=#444444 guifg=#444444 gui=NONE
     hi WildMenu ctermbg=248 ctermfg=235 cterm=NONE guibg=#a8a8a8 guifg=#262626 gui=NONE
-    hi Function ctermbg=NONE ctermfg=231 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Function ctermbg=NONE ctermfg=231 cterm=NONE guibg=NONE guifg=#c7c7c7 gui=NONE
     hi SpecialKey ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi Title ctermbg=NONE ctermfg=231 cterm=NONE guibg=NONE guifg=#c7c7c7 gui=NONE
     hi DiffAdd ctermbg=235 ctermfg=247 cterm=reverse guibg=#262626 guifg=#9e9e9e gui=reverse
@@ -70,7 +70,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi DiffDelete ctermbg=235 ctermfg=243 cterm=reverse guibg=#262626 guifg=#767676 gui=reverse
     hi DiffText ctermbg=235 ctermfg=247 cterm=reverse guibg=#262626 guifg=#9e9e9e gui=reverse
     hi IncSearch ctermbg=243 ctermfg=235 cterm=NONE guibg=#767676 guifg=#262626 gui=NONE
-    hi Search ctermbg=231 ctermfg=235 cterm=NONE guibg=#ffffff guifg=#262626 gui=NONE
+    hi Search ctermbg=231 ctermfg=235 cterm=NONE guibg=#c7c7c7 guifg=#262626 gui=NONE
     hi Directory ctermbg=NONE ctermfg=246 cterm=NONE guibg=NONE guifg=#949494 gui=NONE
     hi debugPC ctermbg=244 ctermfg=NONE cterm=NONE guibg=#808080 guifg=NONE gui=NONE
     hi debugBreakpoint ctermbg=243 ctermfg=NONE cterm=NONE guibg=#767676 guifg=NONE gui=NONE
@@ -83,7 +83,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi Normal ctermbg=black ctermfg=lightgrey cterm=NONE
+    hi Normal ctermbg=black ctermfg=white cterm=NONE
     hi NonText ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi EndOfBuffer ctermbg=NONE ctermfg=darkgrey cterm=NONE
     hi LineNr ctermbg=black ctermfg=lightgrey cterm=NONE
